@@ -29,7 +29,7 @@ uint8_t isThermostatOn(void)
 {
 	// switch is configured as NO.  with pullup enabled, pin is high
 	// when heat is off and low when heat is on.
-	if ((PINB & (1<<THERMOSTAT_PIN)) == 0)
+	if ((PINB & (1<<THERMOSTAT_PIN)) != 0)
 		return 1;
 
 	return 0;

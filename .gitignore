@@ -26,3 +26,9 @@ high.txt
 *.jpg
 *.jpeg
 *.gif
+
+#Ignore eagle files
+*.job
+
+#Project files
+board/*
