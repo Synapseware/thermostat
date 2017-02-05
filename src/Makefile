@@ -48,7 +48,7 @@
 MCU = attiny13
 
 # Fuse values
-L_FUSE = 0x1A
+L_FUSE = 0x3A
 H_FUSE = 0xFF
 
 

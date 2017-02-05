@@ -2,7 +2,12 @@
 ext.txt
 low.txt
 high.txt
+.ext.txt
+.low.txt
+.high.txt
 **.directory
+**.orig
+**.dep
 
 #Ignore build artifacts
 *.o
