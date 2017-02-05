@@ -1,0 +1,23 @@
+#Basic ignores
+ext.txt
+low.txt
+high.txt
+**.directory
+
+#Ignore build artifacts
+*.o
+*.a
+*.lst
+*.eep
+*.hex
+*.elf
+*.lss
+*.map
+*.sym
+
+#Ignore binary and image files
+*.bin
+*.dat
+*.jpg
+*.jpeg
+*.gif
