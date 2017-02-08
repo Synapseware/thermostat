@@ -79,8 +79,6 @@ int main(void)
 	uint8_t heatIsOn = 0;
 	PORTB	&=	~((1<<HEAT_ON) | (1<<HEAT_OFF));
 
-	turnHeatOff();
-
 	while(1)
 	{
 		if (isThermostatOn())

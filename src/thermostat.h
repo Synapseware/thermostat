@@ -8,9 +8,9 @@
 #include <util/delay.h>
 
 
-#define THERMOSTAT_PIN		PB3
+#define THERMOSTAT_PIN		PB2
 #define HEAT_ON				PB1
-#define HEAT_OFF			PB2
+#define HEAT_OFF			PB0
 
 #define TOGGLE_COUNT		3
 #define TOGGLE_ON_DELAY		400

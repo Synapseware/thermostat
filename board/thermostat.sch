@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4010,6 +4010,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R4" library="SparkFun-Passives" deviceset="RESISTOR" device="AXIAL-0.3" value="100k"/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="AXIAL-0.3" value="1k"/>
+<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND11" library="wirepad" deviceset="WIREPAD" device="2,54/0,8" value=""/>
+<part name="12V1" library="wirepad" deviceset="WIREPAD" device="2,54/0,8" value=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4026,8 +4029,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="GND3" gate="1" x="11.43" y="62.23"/>
 <instance part="GND5" gate="1" x="29.21" y="62.23"/>
 <instance part="12V" gate="G$1" x="-38.1" y="43.18"/>
-<instance part="GND" gate="G$1" x="-38.1" y="20.32"/>
-<instance part="GND7" gate="1" x="-26.67" y="10.16"/>
+<instance part="GND" gate="G$1" x="-38.1" y="35.56"/>
+<instance part="GND7" gate="1" x="-26.67" y="26.67"/>
 <instance part="C3" gate="G$1" x="-5.08" y="73.66"/>
 <instance part="GND1" gate="1" x="-5.08" y="62.23"/>
 <instance part="Q1" gate="G$1" x="110.49" y="55.88"/>
@@ -4045,6 +4048,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R4" gate="G$1" x="34.29" y="-12.7" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="34.29" y="-2.54"/>
 <instance part="R5" gate="G$1" x="21.59" y="-22.86" rot="R180"/>
+<instance part="GND12" gate="1" x="-26.67" y="62.23"/>
+<instance part="GND11" gate="G$1" x="-38.1" y="71.12"/>
+<instance part="12V1" gate="G$1" x="-38.1" y="78.74"/>
 </instances>
 <busses>
 </busses>
@@ -4071,8 +4077,8 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="GND" gate="G$1" pin="P"/>
-<wire x1="-35.56" y1="20.32" x2="-26.67" y2="20.32" width="0.2032" layer="91"/>
-<wire x1="-26.67" y1="20.32" x2="-26.67" y2="12.7" width="0.2032" layer="91"/>
+<wire x1="-35.56" y1="35.56" x2="-26.67" y2="35.56" width="0.2032" layer="91"/>
+<wire x1="-26.67" y1="35.56" x2="-26.67" y2="29.21" width="0.2032" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -4106,6 +4112,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <wire x1="49.53" y1="-27.94" x2="49.53" y2="-30.48" width="0.2032" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <pinref part="Q3" gate="G$1" pin="S"/>
+</segment>
+<segment>
+<wire x1="-35.56" y1="71.12" x2="-26.67" y2="71.12" width="0.2032" layer="91"/>
+<pinref part="GND11" gate="G$1" pin="P"/>
+</segment>
+<segment>
+<wire x1="-26.67" y1="71.12" x2="-26.67" y2="64.77" width="0.2032" layer="91"/>
+<pinref part="GND12" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="HEAT_ON" class="0">
@@ -4162,8 +4176,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="12V" gate="G$1" pin="P"/>
 <wire x1="-35.56" y1="43.18" x2="-26.67" y2="43.18" width="0.2032" layer="91"/>
-<wire x1="-26.67" y1="43.18" x2="-26.67" y2="54.61" width="0.2032" layer="91"/>
-<junction x="-26.67" y="54.61"/>
+<wire x1="-26.67" y1="43.18" x2="-26.67" y2="49.53" width="0.2032" layer="91"/>
+<junction x="-26.67" y="49.53"/>
+</segment>
+<segment>
+<wire x1="-35.56" y1="78.74" x2="-26.67" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-26.67" y1="78.74" x2="-26.67" y2="86.36" width="0.1524" layer="91"/>
+<junction x="-26.67" y="86.36"/>
+<pinref part="12V1" gate="G$1" pin="P"/>
 </segment>
 </net>
 <net name="THERMOSTAT_IN" class="0">
