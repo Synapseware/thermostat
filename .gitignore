@@ -32,3 +32,4 @@ high.txt
 
 #Project files
 board/*
+*.epf
